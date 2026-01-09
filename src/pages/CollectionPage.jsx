@@ -107,7 +107,7 @@ const CollectionPage = () => {
               <div className="absolute top-2 inset-x-3 flex flex-row justify-between gap-10 z-10">
                 {/* Download Button */}
                 <button
-                  className="bg-blue-600 text-white px-3 py-2 rounded-md opacity-0 group-hover:opacity-100 cursor-pointer text-xs font-semibold hover:bg-blue-700 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center gap-1"
+                  className="bg-blue-600 text-white px-3 py-2 rounded-md opacity-100 lg:opacity-0 group-hover:opacity-100 cursor-pointer text-xs font-semibold hover:bg-blue-700 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center gap-1"
                   onClick={(e) => handleDownload(e, item)}
                   disabled={downloadingId === item.id}
                 >
@@ -135,7 +135,7 @@ const CollectionPage = () => {
 
                 {/* Remove button */}
                 <button
-                  className="bg-red-600 text-white px-3 py-2 rounded-md opacity-0 group-hover:opacity-100 cursor-pointer text-xs font-semibold hover:bg-red-700 hover:scale-105 active:scale-95 transition-all duration-200"
+                  className="bg-red-600 text-white px-3 py-2 rounded-md opacity-100 lg:opacity-0 group-hover:opacity-100 cursor-pointer text-xs font-semibold hover:bg-red-700 hover:scale-105 active:scale-95 transition-all duration-200"
                   onClick={(e) => handleRemove(e, item)}
                 >
                   <span className="hidden sm:inline">Remove</span>

@@ -66,7 +66,7 @@ const ResultCard = ({ item }) => {
         <div className="absolute top-2 right-2 flex gap-2 z-10">
           {/* Save Button */}
           <button
-            className="bg-emerald-600 text-white px-4 py-2 rounded-md opacity-0 group-hover:opacity-100 cursor-pointer text-sm font-semibold hover:bg-emerald-700 hover:scale-105 active:scale-95 transition-all duration-200"
+            className="bg-emerald-600 text-white px-4 py-2 rounded-md opacity-100 lg:opacity-0 left-2 group-hover:opacity-100 cursor-pointer text-sm font-semibold hover:bg-emerald-700 hover:scale-105 active:scale-95 transition-all duration-200"
             onClick={handleSave}
           >
             Save
@@ -74,7 +74,7 @@ const ResultCard = ({ item }) => {
 
           {/* Download Button */}
           <button
-            className="bg-blue-600 text-white px-4 py-2 rounded-md opacity-0 group-hover:opacity-100 cursor-pointer text-sm font-semibold hover:bg-blue-700 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center gap-1"
+            className="bg-blue-600 text-white px-4 py-2 rounded-md opacity-100 lg:opacity-0 group-hover:opacity-100 cursor-pointer text-sm font-semibold hover:bg-blue-700 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center gap-1"
             onClick={handleDownload}
             disabled={isDownloading}
           >
