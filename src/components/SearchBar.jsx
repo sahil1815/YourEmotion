@@ -14,10 +14,10 @@ const SearchBar = () => {
   };
   return (
     <div className="w-full h-20 text-white bg-gray-800 flex items-center justify-center">
-      <form className="flex gap-10" onSubmit={(e) => handleSubmit(e)}>
+      <form className="flex gap-7 lg:gap-10" onSubmit={(e) => handleSubmit(e)}>
         <input
           required
-          className="border border-gray-300 rounded-lg focus:outline-none px-4 py-2 lg:w-130 max-w-130 h-12 focus:ring-2 focus:ring-green-500 focus:border-transparent"
+          className="border border-gray-300 rounded-lg focus:outline-none px-2 lg:px-4 py-2 lg:w-130 max-w-130 h-12 focus:ring-2 focus:ring-green-500 focus:border-transparent"
           type="text"
           value={search}
           placeholder="Search Your Emotion..."
